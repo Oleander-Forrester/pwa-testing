@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PWA Testing</title>
-    <link rel="manifest" href="/manifest.json"> <meta name="theme-color" content="#317EFB"/>
-    <link rel="apple-touch-icon" href="/icons/oleander.png"> </head>
+    <link rel="manifest" href="/pwa-testing/manifest.json"> <meta name="theme-color" content="#317EFB"/>
+    <link rel="apple-touch-icon" href="/pwa-testing/icons/oleander.png"> </head>
 <body>
     <h1>Hola, esta es mi primera PWA!</h1>
     <p>Esta aplicación web se puede instalar en su dispositivo.</p>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js', { scope: '/' })
+                navigator.serviceWorker.register('/pwa-testing/sw.js', { scope: '/pwa-testing/' })
                     .then(registration => {
                         console.log('Service Worker berhasil didaftarkan:', registration);
                     })
