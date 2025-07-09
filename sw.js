@@ -4,7 +4,8 @@ const urlsToCache = [
   '/pwa-testing/index.html',
   '/pwa-testing/manifest.json',
   '/pwa-testing/sw.js',
-  '/pwa-testing/icons/oleander.png'
+  '/pwa-testing/icons/oleander.png',
+  '/pwa-testing/icons/oleander512.png'
 ];
 
 self.addEventListener('install', event => {
